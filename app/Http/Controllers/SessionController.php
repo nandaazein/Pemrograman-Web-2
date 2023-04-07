@@ -33,7 +33,7 @@ class SessionController extends Controller
         ];
 
         if (Auth::attempt($infologin)) {
-            return redirect('/')->with("success", 'Berhasil Login');
+            return redirect('/admin')->with("success", 'Berhasil Login');
         } else {
             // return 'gagal';
             return redirect('sesi')->withErrors('Username atau Password Salah');
@@ -42,7 +42,7 @@ class SessionController extends Controller
     function logout()
     {
         Auth::logout();
-        return redirect('sesi')->with('success', 'Berhasil Logout');
+        return redirect('/')->with('success', 'Berhasil Logout');
     }
     function register()
     {
@@ -77,7 +77,7 @@ class SessionController extends Controller
         ];
 
         if (Auth::attempt($infologin)) {
-            return redirect('/')->with("success", 'Berhasil Registrasi');
+            return redirect('/product')->with("success", 'Berhasil Registrasi');
         } else {
             return redirect('sesi')->withErrors('Username atau Password tidak valid');
         }

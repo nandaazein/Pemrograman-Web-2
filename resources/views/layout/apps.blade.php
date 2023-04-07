@@ -32,11 +32,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="\sesi\">Login</a>
+              <a class="nav-link" href="\sesi\logout">Logout</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="\sesi\register">Register</a>
-            </li>
+
                    </div>
       </nav>
     <div class="container py-12">

@@ -21,10 +21,19 @@
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
 
-   
+   <style>
+    .top{
+        margin-top: 100px;
+    }
+    </style>
 
 </head>
-    <div class="w-50 center borde rounded px-3 py-3 mx-auto">
+
+<div class="container py-12 top" >
+    <div class="d-flex justify-content-center">
+        <div class="col-lg-12">
+
+<div class="bg-white p-5 shadow" style="border-radius:30px">
         <h1>Register</h1>
         <form action="/sesi/create" method="POST">
             @csrf
@@ -46,4 +55,8 @@
                 <button class="btn btn-primary" name="submit" type="submit">Register</button>
             </div>
         </form>
+    
+    </div> 
+    </div> 
+    </div> 
     </div> 

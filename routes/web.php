@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [ProductController::class, 'index']);
+Route::get('/admin', [ProductController::class, 'index']);
 Route::get('/tambah', [ProductController::class, 'tambah']);
 Route::post('/simpan', [ProductController::class, 'simpan']);
 Route::get('/edit/{id}', [ProductController::class, 'edit']);
@@ -26,7 +26,7 @@ Route::post('/update/{id}', [ProductController::class, 'update']);
 Route::post('/destroy/{id}', [ProductController::class, 'destroy']);
 
 
-Route::get('/sesi', [SessionController::class, 'index']);
+Route::get('/', [SessionController::class, 'index']);
 Route::post('/sesi/login', [SessionController::class, 'login']);
 Route::get('/sesi/logout', [SessionController::class, 'logout']);
 

@@ -33,8 +33,12 @@
     <meta name="theme-color" content="#712cf9">
 </head>
     <body>
-
-    <div class="w-50 center borde rounded px-3 py-3 mx-auto">
+        <div class="container py-12" >
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-12">
+    
+        <div class="bg-white p-5 shadow" style="border-radius:30px">
+    
         <h1>Login</h1>
         <form action="/sesi/login" method="POST">
             @csrf
@@ -47,8 +51,14 @@
                 <input type="password" value="{{ Session::get('email') }}" name="password" class="form-control">
             </div>
             <div class="mb-3 d-grid">
-                <button class="btn btn-primary" name="submit" type="submit">Login</button>
+                <button class="btn btn-primary" name="submit" type="submit">Login</button><br>
+                <a class="btn btn-primary" href="/sesi/register">Register</a>
+                
             </div>
         </form>
     </div>
+        </div>
+    </div>
+        </div>
+        </div>
 </body>
