@@ -14,7 +14,7 @@
 @extends('layout')
 @section('content')
     <a href="/" class="mb-4">Kembali</a>
-    <h3 class="fw-bold">Edit Sepatu</h3>
+    <h3 class="fw-bold">Edit Barang</h3>
     <form action="/update/{{ $product->id }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group mb-3">
